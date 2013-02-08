@@ -1,5 +1,10 @@
-class User < ActiveRecord::Base
+class User
+  include Mongoid::Document
   attr_accessible :email, :first_name, :last_name
+
+  field :first_name, type: String
+  field :last_name, type: String
+  field :email, type: String
 
   validates :first_name, :last_name, :email, presence: true
 
