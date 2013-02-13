@@ -19,7 +19,7 @@ God.watch do |w|
   w.env = { 'RAILS_ROOT' => rails_root,
             'RAILS_ENV' => rails_env }
 
-  w.start = "bundle exec resque-web --app-dir #{app_dir} -r #{redis} -p #{resque_web_port}"
+  w.start = "bundle exec resque-web --app-dir #{app_dir} -L -r #{redis} -p #{resque_web_port}"
   w.stop = "bundle exec resque-web --app-dir #{app_dir} -K"
 
   # determine the state on startup
