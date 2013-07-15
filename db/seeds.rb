@@ -10,3 +10,9 @@ User.create(
   last_name: 'Smith',
   email: 'john.smith@gmail.com'
 )
+
+User.create(
+  first_name: 'Joe',
+  last_name: 'Doe',
+  email: 'joe.doe@gmail.com'
+)
