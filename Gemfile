@@ -4,7 +4,7 @@ source 'https://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.11'
 
-gem 'pg'
+gem 'mysql2'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
@@ -17,3 +17,7 @@ gem 'twitter-bootstrap-rails'
 gem 'haml'
 gem 'haml-rails'
 gem 'unicorn'
+
+group :test do
+  gem 'rspec'
+end
